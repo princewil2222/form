@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended: true}));
 // connecting to the api route
 app.use('/api/students', routes);
 
-app.get('/home', (req, res) =>{
+app.get('/', (req, res) =>{
     // res.render('home');
     res.render('index')
 })
